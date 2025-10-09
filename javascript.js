@@ -77,17 +77,26 @@ function displayBooks(array){
 
 
     //afegim a contenidor
-    container.appendChild(divCard);
-
+    // container.appendChild(divCard);
+    container.insertBefore(divCard,container.firstChild);    
   }
   
-//lògica per mostrar llibres a la pàgina.
-//agafem la posició del container
 }
 
+//llancem funció per ensenyar tota la llibreria
 displayBooks(myLibrary);
 
+//obrim dialog
 
+const dialog = document.querySelector("dialog");
+const addButton = document.querySelector(".addButton");
+const closeButton = document.querySelector(".close");
 
+addButton.addEventListener("click",() => {
+  dialog.showModal();
+});
+closeButton.addEventListener("click",() =>{
+  dialog.close();
+});
 
 

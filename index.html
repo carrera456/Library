@@ -7,9 +7,27 @@
     <script src="javascript.js" defer></script>
   </head>
   <body>
-
     <h1>Library</h1>    
     <div class="container">
+	<button class="addButton"></button>
     </div>
+    <dialog>
+      <form>
+	<p>Introduir nou llibre</p>
+	<label for="titol">Títol</label>
+	<input name="titol" type="text" value="" id="titol"/>
+	<label for="autor">Autor</label>
+	<input name="autor" type="text" value="" id="autor"/>
+	<label for="pagines">Pàgines</label>
+	<input name="pagines" type="text" value="" id="pagines"/>
+	<label for="sinopsis">Sinopsis</label>
+	<input name="sinopsis" type="text" value="" id="sinopsis"/>
+	<label for="estat">Estat</label>
+	<input name="estat" type="text" value="" id="estat"/>
+	<button type="Submit" class="addBook">Afegir</button>
+	<button class="close">Cancelar</button>
+      </form>
+    </dialog>
+
   </body>
 </html>
