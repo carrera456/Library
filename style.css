@@ -1,0 +1,64 @@
+/*-------------------------------------------------- normalitzem css --------------------------------------------------*/
+@import "modern-normalize.css";
+root {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/*-------------------------------------------------- importem fonts --------------------------------------------------*/
+@font-face {
+    font-family: 'customFont';
+    src: url('fonts/roboto.woff2') format('woff2');
+/*     font-weight: bold; */
+/*     font-style: normal; */
+/*     font-display: swap; */
+}
+
+
+/*-------------------------------------------------- disseny de la pàgina --------------------------------------------------*/
+
+h1{
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 40px 0px 40px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap:15px;
+    padding: 50px;
+}
+
+.card{
+    background-color: #fdfaf9;
+    box-shadow: 5px 5px 5px #969a9f;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border-left: 20px gold solid;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+}
+
+.label{
+    font-weight: bold;
+}
