@@ -13,19 +13,29 @@
     </div>
     <dialog>
       <form>
-	<p>Introduir nou llibre</p>
-	<label for="titol">Títol</label>
-	<input name="titol" type="text" value="" id="titol"/>
-	<label for="autor">Autor</label>
-	<input name="autor" type="text" value="" id="autor"/>
-	<label for="pagines">Pàgines</label>
-	<input name="pagines" type="text" value="" id="pagines"/>
-	<label for="sinopsis">Sinopsis</label>
-	<input name="sinopsis" type="text" value="" id="sinopsis"/>
-	<label for="estat">Estat</label>
-	<input name="estat" type="text" value="" id="estat"/>
-	<button type="Submit" class="addBook">Afegir</button>
-	<button class="close">Cancelar</button>
+	<div class="formFields">
+	  <p class="formTitle">Introduir nou llibre</p>
+	  <label for="titol">Títol</label>
+	  <input name="titol" type="text" value="" id="titol" required/>
+	  <label for="autor">Autor</label>
+	  <input name="autor" type="text" value="" id="autor" required/>
+	  <label for="pagines">Pàgines</label>
+	  <input name="pagines" type="text" value="" id="pagines" required/>
+	  <label for="sinopsis">Sinopsis</label>
+	  <textarea name="sinopsis" type="text" value="" id="sinopsis" required></textarea>
+	  <div class="formRadio">
+	    <p>Estat</p>
+	    <input name="estat" type="radio" value="Pendent" id="Pendent" required/>
+	    <label for="Pendent">Pendent</label>
+	    <input name="estat" type="radio" value="Llegit" id="Llegit" required/>
+	    <label for="Llegit">Llegit</label>
+	  </div>
+	</div>
+	<div class="formButtons">
+	  <button type="Submit" class="addBook">Afegir</button>
+	  <button class="close">Cancelar</button>
+	  <button type="reset" class="reset">Reset</button>
+	</div>
       </form>
     </dialog>
 

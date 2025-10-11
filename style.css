@@ -35,6 +35,10 @@ img {
 
 /*-------------------------------------------------- disseny de la pàgina --------------------------------------------------*/
 
+* {
+font-family: customFont;
+}
+
 h1{
     font-size: 1.8em;
     font-weight: bold;
@@ -82,20 +86,62 @@ h1{
 }
 
 dialog{
-    height: 500px;
-    width: 500px;
+   border: 1px solid black; 
+   border-radius: 10px;
 }
 
-form{
+.formFields{
     display: grid;
     grid-template-columns: 75px 1fr;
     gap: 5px;
 }
 
-form > p{
+.formTitle{
     grid-column: 1 / 3;
     padding-bottom: 20px;
     font-weight: bold;
     /* align-self: center; */
     justify-self: center;
+}
+
+.formButtons{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: right;
+    direction: rtl;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    height:30px;
+    width:100px;
+    
+    color: white;
+}
+
+.addBook{
+    background-color: green;
+}
+
+.close{
+    background-color: red;
+}
+
+input{
+    resize: both;
+}
+.formRadio{
+    display: grid;
+    grid-template-columns: 75px 1fr 1fr;
+    gap: 10px;
+}
+#Llegit{
+    grid-column: 2 / 3;
+}
+
+.reset{
+    background-color: orange;
 }
