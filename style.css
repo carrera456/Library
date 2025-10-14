@@ -60,13 +60,33 @@ h1{
     border-radius: 10px;
     border-left: 20px gold solid;
     display: grid;
-    grid-template-columns: 75px 1fr;
+    grid-template-columns: 75px 75px 1fr;
     /* justify-items: center; */
     /* align-items: center; */
 }
 
 .label{
     font-weight: bold;
+    grid-column: 1 / 2;
+
+}
+
+.info{
+    grid-column: 2 / 4;
+}
+
+
+.changeState{
+    grid-column: 3 / 4;
+    justify-self: left;
+    background-color: skyblue;
+    background-image: url(icons/sync.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.estatCard{
+    width: 25px;
 }
 
 .addButton{
@@ -144,4 +164,13 @@ input{
 
 .reset{
     background-color: orange;
+}
+
+.remove{
+    background-image:url(icons/delete.svg);
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    grid-column: 3 / 4;
+    justify-self: right;
 }

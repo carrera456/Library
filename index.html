@@ -9,6 +9,20 @@
   <body>
     <h1>Library</h1>    
     <div class="container">
+	<div class="card">
+		<div class="label">Títol</div>
+		<div class="info">El petit príncep</div>
+		<div class="label">Autor</div>
+		<div class="info">Antoine de Sant-Excupéry</div>
+		<div class="label">Pàgines</div>
+		<div class="info">85</div>
+		<div class="label">Sinopsis</div>
+		<div class="info">La història del petit príncep</div>
+		<div class="label">Estat</div>
+		<div class="estatCard">Pendent</div>
+		<button class="changeState"></button>
+		<button class="remove"></button>
+	</div>
 	<button class="addButton"></button>
     </div>
     <dialog>
@@ -20,7 +34,7 @@
 	  <label for="autor">Autor</label>
 	  <input name="autor" type="text" value="" id="autor" required/>
 	  <label for="pagines">Pàgines</label>
-	  <input name="pagines" type="text" value="" id="pagines" required/>
+	  <input name="pagines" type="number" value="" id="pagines"  required/>
 	  <label for="sinopsis">Sinopsis</label>
 	  <textarea name="sinopsis" type="text" value="" id="sinopsis" required></textarea>
 	  <div class="formRadio">
@@ -38,6 +52,5 @@
 	</div>
       </form>
     </dialog>
-
   </body>
 </html>
