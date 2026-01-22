@@ -30,16 +30,20 @@
 	<div class="formFields">
 	  <p class="formTitle">Introduir nou llibre</p>
 	  <label for="titol">Títol</label>
-	  <input name="titol" type="text" value="" id="titol" required max="200"/>
+	  <input name="titol" type="text" value="" id="titol" required maxLength="20" minLength="10"/>
+	  <p class="error" id="titolError"></p>
 	  <label for="autor">Autor</label>
-	  <input name="autor" type="text" value="" id="autor" required max="200"/>
+	  <input name="autor" type="text" value="" id="autor" required maxLength="50" minLength="10"/>
+	  <p class="error" id="autorError"></p>
 	  <label for="pagines">Pàgines</label>
-	  <input name="pagines" type="number" value="" id="pagines"  required/>
+	  <input name="pagines" type="number" value="" id="pagines" min="5" max="500" required/>
+	  <p class="error" id="paginesError"></p>
 	  <label for="sinopsis">Sinopsis</label>
-	  <textarea name="sinopsis" type="text" value="" id="sinopsis" required></textarea>
+	  <textarea name="sinopsis" type="text" value="" id="sinopsis" required maxLength="50" minLength="10"></textarea>
+	  <p class="error" id="sinopsisError"></p>
 	  <div class="formRadio">
 	    <p>Estat</p>
-	    <input name="estat" type="radio" value="Pendent" id="Pendent" required/>
+	    <input name="estat" type="radio" value="Pendent" id="Pendent" required checked/>
 	    <label for="Pendent">Pendent</label>
 	    <input name="estat" type="radio" value="Llegit" id="Llegit" required/>
 	    <label for="Llegit">Llegit</label>
